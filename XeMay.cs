@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace QuanLyXe
 {
-    class XeMay:Xe
+    class XeMay : Xe
     {
-        // properties
+        //Properties
         int PhanKhoi;
+        public int getPhanKhoi(){return PhanKhoi;}
+        public void setPhanKhoi(int PhanKhoi){this.PhanKhoi = PhanKhoi;}
+
         // Constructor
         public XeMay():base()
         {
@@ -22,9 +25,11 @@ namespace QuanLyXe
         {
             this.PhanKhoi = PhanKhoi;
         }
+
         // Methods
         public override void NhapThongTin()
         {
+            Console.WriteLine("Nhập Thông Tin Xe Máy");
             base.NhapThongTin();
             Console.WriteLine("PhanKhoi la: ");
             PhanKhoi = int.Parse(Console.ReadLine());
@@ -36,8 +41,8 @@ namespace QuanLyXe
         }
         public void CapNhatPhanKhoi()
         {
-            Console.WriteLine("PhanKhoi cu la: " + this.PhanKhoi);
-            Console.WriteLine("Nhap PhanKhoi moi: ");
+            Console.WriteLine("Phân Khối Cũ là: " + this.PhanKhoi);
+            Console.WriteLine("Nhập PhanKhoi moi: ");
             this.PhanKhoi = int.Parse(Console.ReadLine());
         }
         public void CapNhatPhanKhoi(int PhanKhoi)
