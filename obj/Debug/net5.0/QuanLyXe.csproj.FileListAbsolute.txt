@@ -14,3 +14,19 @@ C:\Users\taqua\OneDrive\Project\Programming Project\C-Sharp\QuanLyXe\obj\Debug\n
 C:\Users\taqua\OneDrive\Project\Programming Project\C-Sharp\QuanLyXe\obj\Debug\net5.0\ref\QuanLyXe.dll
 C:\Users\taqua\OneDrive\Project\Programming Project\C-Sharp\QuanLyXe\obj\Debug\net5.0\QuanLyXe.pdb
 C:\Users\taqua\OneDrive\Project\Programming Project\C-Sharp\QuanLyXe\obj\Debug\net5.0\QuanLyXe.genruntimeconfig.cache
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\QuanLyXe.csproj.AssemblyReference.cache
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\QuanLyXe.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\QuanLyXe.AssemblyInfoInputs.cache
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\QuanLyXe.AssemblyInfo.cs
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\QuanLyXe.csproj.CoreCompileInputs.cache
+D:\GitHub\SendToTeacher\QuanLyXe\bin\Debug\net5.0\QuanLyXe.exe
+D:\GitHub\SendToTeacher\QuanLyXe\bin\Debug\net5.0\QuanLyXe.deps.json
+D:\GitHub\SendToTeacher\QuanLyXe\bin\Debug\net5.0\QuanLyXe.runtimeconfig.json
+D:\GitHub\SendToTeacher\QuanLyXe\bin\Debug\net5.0\QuanLyXe.runtimeconfig.dev.json
+D:\GitHub\SendToTeacher\QuanLyXe\bin\Debug\net5.0\QuanLyXe.dll
+D:\GitHub\SendToTeacher\QuanLyXe\bin\Debug\net5.0\QuanLyXe.pdb
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\QuanLyXe.dll
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\ref\QuanLyXe.dll
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\QuanLyXe.pdb
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\QuanLyXe.genruntimeconfig.cache
+D:\GitHub\SendToTeacher\QuanLyXe\obj\Debug\net5.0\refint\QuanLyXe.dll

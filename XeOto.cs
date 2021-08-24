@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +9,11 @@ namespace QuanLyXe
     class XeOto:Xe
     {
         int SoChoNgoi;
+        public int getSoChoNgoi() {return SoChoNgoi;}
+        public void setSoChoNgoi(int soChoNgoi) {SoChoNgoi = soChoNgoi;}
         string LoaiXe;
+        public string getLoaiXe() {return LoaiXe;}
+        public void setLoaiXe(string loaiXe) {LoaiXe = loaiXe;}
         public XeOto():base()
         {
             this.SoChoNgoi = 0;
@@ -26,6 +29,7 @@ namespace QuanLyXe
         }
         public override void NhapThongTin()
         {
+            Console.WriteLine("Nhập Thông Tin Xe Ôto");
             base.NhapThongTin();
             Console.WriteLine("SoChoNgoi la: ");
             SoChoNgoi = int.Parse(Console.ReadLine());

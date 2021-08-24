@@ -1,27 +1,38 @@
 ﻿using System;
+using System.Text;
 
 namespace QuanLyXe
 {
     class Program
     {
-        static void Main(string[] args)
+        static void UpdatePhanKhoi(){
+
+        }
+        static void Programming(Xe[] listVehicle)
         {
-            Xe[] listVehicle = new Xe[20];
             int VongLap = 1;
             int iSoXe = 0;
             while (VongLap < 50)
             {
-                Console.WriteLine("Chon chức năng bạn muốn sử dụng..!");
-                Console.WriteLine("1. Tạo đối tượng xe");
+                Console.WriteLine("1. Tạo đối tượng Xe");
                 Console.WriteLine("2. Tạo đối tượng XeOto");
                 Console.WriteLine("3. Tạo đối tượng XeTai");
                 Console.WriteLine("4. Tạo đối tượng XeMay");
                 Console.WriteLine("5. Xuất Cả Danh Sách Xe");
+                Console.WriteLine("6. Cập Nhật PhanKhoi XeMay");
+                Console.WriteLine("0. Thoát chương trình");
+                Console.WriteLine("Chọn chức năng bạn muốn sử dụng..!");
                 int ChucNang = int.Parse(Console.ReadLine());
                 switch (ChucNang)
                 {
+                    case 0:// Thoát chương trình
+                    {
+                        Environment.Exit(0);
+                        break;
+                    }
                     case 1: // Tạo đối tượng xe
                         {
+                            Console.Clear();
                             listVehicle[iSoXe] = new Xe();
                             listVehicle[iSoXe].NhapThongTin();
                             iSoXe++;
@@ -29,6 +40,7 @@ namespace QuanLyXe
                         }
                     case 2: // Tạo đối tượng XeOto
                         {
+                            Console.Clear();
                             listVehicle[iSoXe] = new XeOto();
                             listVehicle[iSoXe].NhapThongTin();
                             iSoXe++;
@@ -36,6 +48,7 @@ namespace QuanLyXe
                         }
                     case 3: // Tạo đối tượng XeTai
                         {
+                            Console.Clear();
                             listVehicle[iSoXe] = new XeTai();
                             listVehicle[iSoXe].NhapThongTin();
                             iSoXe++;
@@ -43,50 +56,40 @@ namespace QuanLyXe
                         }
                     case 4: // Tạo đối tượng XeMay
                         {
+                            Console.Clear();
                             listVehicle[iSoXe] = new XeMay();
                             listVehicle[iSoXe].NhapThongTin();
                             iSoXe++;
                             break;
                         }
-                    case 5:
+                    case 5: //Hiện tất cả danh sách xe
                         {
+                            Console.Clear();
                             Console.WriteLine("Danh sách xe gồm: ");
-                            int k = 1;
-                            while (k < iSoXe)
+                            for(int i = 0; i <= iSoXe ; i++)
                             {
-                                listVehicle[k].XuatThongTin();
-                                k++;
+                                listVehicle[i].XuatThongTin();
                             }
+                            Console.ReadKey();
+                            break;
                         }
+                    case 6: {//Cập nhật phân khối xe
+
+                        break;
+                    }
                     default:
                         Console.WriteLine("Làm gì có chức năng đó..!");
                         break;
                 }
                 VongLap++;
             }
-
-            //Xe xe2 = new XeOto();
-            //xe2.NhapThongTin();
-            //xe2.XuatThongTin();
-
-            Xe[] DanhSachXe = new Xe[10]; // kiểu dữ liệu đặt cho Array sẽ được apply to all elements..
-            //DanhSachXe[0] = new Xe();
-
-            DanhSachXe[1] = new XeOto();
-            DanhSachXe[2] = new XeMay();
-            DanhSachXe[3] = new XeTai();
-
-            Console.WriteLine("Nhap XeOto..");
-            DanhSachXe[1].NhapThongTin();
-            DanhSachXe[1].XuatThongTin();
-
-            Console.WriteLine("Nhap XeMay..");
-            DanhSachXe[2].NhapThongTin();
-            DanhSachXe[2].XuatThongTin();
-
-            Console.WriteLine("Nhap XeTai..");
-            DanhSachXe[3].NhapThongTin();
-            DanhSachXe[3].XuatThongTin();
+        }
+        static void Main(string[] args)
+        {
+            Console.InputEncoding = Encoding.Unicode;
+            Console.OutputEncoding = Encoding.Unicode;
+            Xe[] listVehicle = new Xe[20];
+            Programming(listVehicle);
         }
     }
 }

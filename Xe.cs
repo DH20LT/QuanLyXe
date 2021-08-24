@@ -8,12 +8,25 @@ namespace QuanLyXe
 {
     class Xe
     {
-        protected string SoXe;
-        protected string MauXe;
-        protected string NuocSanXuat;
-        protected string HangSanXuat;
-        protected int NamSanXuat;
-        protected string SoBanhXe;
+        string SoXe;
+        public void setXe(string SoXe) { this.SoXe = SoXe;}
+        public string getXe() { return SoXe;}
+        string MauXe;
+        public void setMauXe(string MauXe) { this.MauXe = MauXe;}
+        public string getMauXe() { return MauXe;}
+        string NuocSanXuat;
+        public void setNuocSanXuat(string NuocSanXuat) { this.NuocSanXuat = NuocSanXuat;}
+        public string getNuocSanXuat() { return NuocSanXuat;}
+        string HangSanXuat;
+        public void setHangSanXuat(string HangSanXuat) { this.HangSanXuat = HangSanXuat;}
+        public string getHangSanXuat() { return HangSanXuat;}
+        int NamSanXuat;
+        public void setNamSanXuat(int NamSanXuat) { this.NamSanXuat = NamSanXuat;}
+        public int getNamSanXuat() { return NamSanXuat;}
+        string SoBanhXe;
+        public void setSoBanhXe(string SoBanhXe) { this.SoBanhXe = SoBanhXe;}
+        public string getSoBanhXe() { return SoBanhXe;}
+
         public Xe() // ()
         {
             this.SoXe = "";
@@ -34,15 +47,15 @@ namespace QuanLyXe
         }
         public virtual void NhapThongTin()
         {
-            Console.WriteLine("SoXe la: ");
+            Console.WriteLine("Số Xe la: ");
             SoXe = Console.ReadLine();
-            Console.WriteLine("MauXe la: ");
+            Console.WriteLine("Mẫu Xe la: ");
             MauXe = Console.ReadLine();
-            Console.WriteLine("NuocSanXuat la: ");
+            Console.WriteLine("Nước Sản Xuất la: ");
             NuocSanXuat = Console.ReadLine();
-            Console.WriteLine("HangSanXuat la: ");
+            Console.WriteLine("Hãng Sản Xuất la: ");
             HangSanXuat = Console.ReadLine();
-            Console.WriteLine("SoBanhXe la: ");
+            Console.WriteLine("Số Bánh Xe la: ");
             SoBanhXe = Console.ReadLine();
         }
         public virtual void XuatThongTin()

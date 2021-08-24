@@ -22,6 +22,7 @@ namespace QuanLyXe
         }
         public override void NhapThongTin()
         {
+            Console.WriteLine("Nhập Thông Tin Xe Tải");
             base.NhapThongTin();
             Console.WriteLine("TaiTrong la: ");
             TaiTrong = int.Parse(Console.ReadLine());
